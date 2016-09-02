@@ -1,5 +1,10 @@
+
 <h3><%= @game.current_player.name %> attacked <%= @game.other_player.name %></h3>
 
 <%= @game.other_player.name %>: <%= @game.other_player.hit_points %>HP
+
+<% if @game.other_player.hit_points <= 0 %>
+  <%= @game.other_player.name %> looses!
+<% end %>
 
 <a href="/play">Change Turns</a>
