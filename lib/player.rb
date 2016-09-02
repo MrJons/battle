@@ -8,7 +8,7 @@ class Player
     @hit_points = DEFAULT_HIT_POINTS
   end
 
-  def attack
+  def be_attacked
     @hit_points -= 10
   end
 end

@@ -16,4 +16,10 @@ describe Player do
       expect(jon.hit_points).to eq described_class::DEFAULT_HIT_POINTS
     end
   end
+
+  # describe "#be_attacked" do
+  #   it "reduces hit points when attacked" do
+  #     expect{mertz.be_attacked}.to change{mertz.hit_points}.by -10
+  #   end
+  # end
 end
